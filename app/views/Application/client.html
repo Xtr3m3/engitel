@@ -1,0 +1,247 @@
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/bootstrap.min.css'}">
+    <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
+    <script type="text/javascript" src="@{'/public/javascripts/jquery-1.7.2.min.js'}"></script>
+    <script type="text/javascript" src="@{'/public/javascripts/bootstrap-tab.js'}"></script>
+	<script type="text/javascript" src="@{'/public/javascripts/bootstrap-dropdown.js'}"></script>
+    <script type="text/javascript" src="@{'/public/javascripts/bootstrap-modal.js'}"></script>
+</head>
+<body>
+<div id="navbar-example" class="navbar navbar-static" style="border-radius: 0px;">
+	<div class="navbar-inner" style="border-radius: 0px;">
+		<div class="container" style="width: auto;border-radius: 0px;">
+			<a class="brand" href="#" style="color: #DDDDDD;">Engitel</a>
+			<ul class="nav pull-right">
+				<li id="fat-menu" class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: #DDDDDD;">
+						williams manrique
+						<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">configurar cuenta</a></li>
+						<li><a href="#">salir</a></li>
+						<li class="divider"></li>
+						<li><a href="#">ayuda</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="page-header">
+		<h1>System CRM Engitel</h1>
+	</div>
+	<div class="tabbable tabs-left">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#lA" data-toggle="tab">Respuestas a solicitudes</a></li>
+			<li class=""><a href="#lB" data-toggle="tab">Crear solicitud</a></li>
+			<li class=""><a href="#lC" data-toggle="tab">Configuraci&oacute;n de cuenta</a></li>
+			<li class=""><a href="#lD" data-toggle="tab">Recomendar</a></li>
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" id="lA">
+                <table class="table table-striped" style="font-size: inherit;">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Summary</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Precio para una antena de hacker</td>
+                        <td>
+                            <a class="btn" data-toggle="modal" href="#myModal00" >detalles</a>
+                            <div class="modal hide fade in" id="myModal00">
+                                <div class="modal-header">
+                                    <a class="close" data-dismiss="modal">x</a>
+                                    <h3>Precio para antena de hacker</h3>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Gerente de Ventas : Herminio P.</p>
+                                    <p>
+                                        Respuesta : Estimido
+                                        la cotizacion por parte de la empresa se encuentra en el archivo adjunto
+                                        de estar conforme contactese con nosotros al numero 01923819099, sera un
+                                        placer servirlo
+                                    </p>
+                                    <a href="#">cotizacion.pdf</a>
+                                </div>
+                                <div class="form-actions">
+                                    <button class="btn btn-primary">responder</button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Misil</td>
+                        <td>
+                            <a class="btn" data-toggle="modal" href="#myModal01" >detalles</a>
+                            <div class="modal hide fade in" id="myModal01">
+                                <div class="modal-header">
+                                    <a class="close" data-dismiss="modal">x</a>
+                                    <h3>Misil</h3>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Gerente de Ventas : Herminio P.</p>
+                                    <p>
+                                        Respuesta : Estimido
+                                        la cotizacion por parte de la empresa se encuentra en el archivo adjunto
+                                        de estar conforme contactese con nosotros al numero 01923819099, sera un
+                                        placer servirlo
+                                    </p>
+                                    <a href="#">cotizacion.pdf</a>
+                                </div>
+                                <div class="form-actions">
+                                    <button class="btn btn-primary">responder</button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Computadora Lentium 4</td>
+                        <td>
+                            <a class="btn" data-toggle="modal" href="#myModal02" >detalles</a>
+                            <div class="modal hide fade in" id="myModal02">
+                                <div class="modal-header">
+                                    <a class="close" data-dismiss="modal">x</a>
+                                    <h3>Computadora Lentium 4</h3>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Gerente de Ventas : Herminio P.</p>
+                                    <p>
+                                        Respuesta : Estimido
+                                        la cotizacion por parte de la empresa se encuentra en el archivo adjunto
+                                        de estar conforme contactese con nosotros al numero 01923819099, sera un
+                                        placer servirlo
+                                    </p>
+                                    <a href="#">cotizacion.pdf</a>
+                                </div>
+                                <div class="form-actions">
+                                    <button class="btn btn-primary">responder</button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+			</div>
+			<div class="tab-pane" id="lB">
+                <form class="form-horizontal">
+                    <div class="control-group">
+                        <label class="control-label" for="asunto">Asunto</label>
+                        <div class="controls">
+                            <input type="text" class="input-xlarge" id="asunto" name="summary" style="height: 28px;">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="tipo">Tipo de Solicitud</label>
+                        <div class="controls">
+                            <select id="tipo" name="type" class="input-xlarge">
+                                <option>Cotizaci&oacute;n</option>
+                                <option>Compra</option>
+                                <option>Servicio</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="file">Adjuntar archivo</label>
+                        <div class="controls">
+                            <input class="input-file" id="file" type="file" name="file">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="textarea">Descripci&oacute;n detallada</label>
+                        <div class="controls">
+                            <textarea class="input-xxlarge" id="textarea" rows="8" name="description"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+			</div>
+			<div class="tab-pane" id="lC">
+				  <form class="form-horizontal" action="home.html">
+					  <fieldset>
+						  <div class="control-group">
+							  <label class="control-label" for="input03">Nombres</label>
+							  <div class="controls">
+								  <input type="text" class="input-medium" id="input04" name="nombres" style="height: 28px;">
+							  </div>
+						  </div>
+						  <div class="control-group">
+							  <label class="control-label" for="input03">Apellidos</label>
+							  <div class="controls">
+								  <input type="text" class="input-medium" id="input05" name="apellidos" style="height: 28px;">
+							  </div>
+						  </div>
+						  <div class="control-group">
+							  <label class="control-label" for="input03">Email</label>
+							  <div class="controls">
+								  <input type="text" class="input-medium" id="input06" name="email" style="height: 28px;">
+							  </div>
+						  </div>
+						  <div class="control-group">
+							  <label class="control-label" for="input03">Contrase&ntilde;a</label>
+							  <div class="controls">
+								  <input type="text" class="input-medium" id="input07" name="password" style="height: 28px;">
+							  </div>
+						  </div>
+						  <div class="control-group">
+							  <label class="control-label" for="input03">Confirmar contrase&ntilde;a</label>
+							  <div class="controls">
+								  <input type="text" class="input-medium" id="input08" name="cpassword" style="height: 28px;">
+							  </div>
+						  </div>
+						  <div class="control-group">
+							  <label class="control-label" for="input03">Empresa *</label>
+							  <div class="controls">
+								  <input type="text" class="input-medium" id="input09" name="empresa" style="height: 28px;">
+							  </div>
+						  </div>
+						  <div class="control-group">
+							  <label class="control-label" for="input03">Celular</label>
+							  <div class="controls">
+								  <input type="text" class="input-medium" id="input10" name="celular" style="height: 28px;">
+							  </div>
+						  </div>
+						  <div class="control-group">
+							  <label class="control-label" for="input03">Tel&eacute;fono</label>
+							  <div class="controls">
+								  <input type="text" class="input-medium" id="input11" name="telefono" style="height: 28px;">
+							  </div>
+						  </div>
+						  <div class="form-actions">
+							  <button type="submit" class="btn btn-primary">Registrar</button>
+						  </div>
+					  </fieldset>
+				  </form>
+			</div>
+			<div class="tab-pane" id="lD">
+				<form class="form-horizontal" action="home.html">
+					<fieldset>
+						<div class="control-group">
+							<label class="control-label" for="input03">Email</label>
+							<div class="controls">
+								<input type="text" class="input-medium" id="input03" name="email" style="height: 28px;">
+							</div>
+						</div>
+						<div class="form-actions">
+							<button type="submit" class="btn btn-primary">Enviar</button>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

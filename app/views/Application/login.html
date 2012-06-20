@@ -1,0 +1,142 @@
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/bootstrap.min.css'}">
+    <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
+    <script type="text/javascript" src="@{'/public/javascripts/jquery-1.7.2.min.js'}"></script>
+    <script type="text/javascript" src="@{'/public/javascripts/bootstrap-tab.js'}"></script>
+</head>
+<body>
+<div id="navbar-example" class="navbar navbar-static" style="border-radius: 0px;">
+    <div class="navbar-inner" style="border-radius: 0px;">
+        <div class="container" style="width: auto;border-radius: 0px;">
+            <a class="brand" href="#" style="color: #DDDDDD;">Engitel</a>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <section id="registro">
+        <div class="row">
+            <div class="span4">
+                <div class="page-header">
+                    <h1>System CRM Engitel</h1>
+                </div>
+                <p>
+                    Sistema de atenci&oacute;n de clientes para solicitudes,cotizaciones y ventas de servicios y/o
+                    productos
+                </p>
+            </div>
+            <div class="span1">
+                <p>
+                </p>
+            </div>
+            <div class="span7">
+                <br/><br/><br/><br/>
+                <div class="tabbable tabs-left">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#lA" data-toggle="tab">Iniciar sesi&oacute;n</a></li>
+                        <li class=""><a href="#lB" data-toggle="tab">Registrarse</a></li>
+                        <li class=""><a href="#lC" data-toggle="tab">Recomendar</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="lA">
+                            <form class="form-horizontal" action="@{Application.client()}">
+                                <fieldset>
+                                    <div class="control-group">
+                                        <label class="control-label" for="input01">Email</label>
+                                        <div class="controls">
+                                            <input type="text" class="input-medium" id="input01" name="email" style="height: 28px;">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label" for="input02">Contrase&ntilde;a</label>
+                                        <div class="controls">
+                                            <input type="text" class="input-medium" id="input02" name="password" style="height: 28px;">
+                                        </div>
+                                    </div>
+                                    <div class="form-actions">
+                                        <button type="submit" class="btn btn-primary">Iniciar</button>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="tab-pane" id="lB">
+                            <form class="form-horizontal" action="client.html">
+                                <fieldset>
+                                    <div class="control-group">
+                                        <label class="control-label" for="input03">Nombres</label>
+                                        <div class="controls">
+                                            <input type="text" class="input-medium" id="input04" name="nombres" style="height: 28px;">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label" for="input03">Apellidos</label>
+                                        <div class="controls">
+                                            <input type="text" class="input-medium" id="input05" name="apellidos" style="height: 28px;">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label" for="input03">Email</label>
+                                        <div class="controls">
+                                            <input type="text" class="input-medium" id="input06" name="email" style="height: 28px;">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label" for="input03">Contrase&ntilde;a</label>
+                                        <div class="controls">
+                                            <input type="text" class="input-medium" id="input07" name="password" style="height: 28px;">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label" for="input03">Confirmar contrase&ntilde;a</label>
+                                        <div class="controls">
+                                            <input type="text" class="input-medium" id="input08" name="cpassword" style="height: 28px;">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label" for="input03">Empresa *</label>
+                                        <div class="controls">
+                                            <input type="text" class="input-medium" id="input09" name="empresa" style="height: 28px;">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label" for="input03">Celular</label>
+                                        <div class="controls">
+                                            <input type="text" class="input-medium" id="input10" name="celular" style="height: 28px;">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label" for="input03">Tel&eacute;fono</label>
+                                        <div class="controls">
+                                            <input type="text" class="input-medium" id="input11" name="telefono" style="height: 28px;">
+                                        </div>
+                                    </div>
+                                    <div class="form-actions">
+                                        <button type="submit" class="btn btn-primary">Registrar</button>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="tab-pane" id="lC">
+                            <form class="form-horizontal" action="client.html">
+                                <fieldset>
+                                    <div class="control-group">
+                                        <label class="control-label" for="input03">Email</label>
+                                        <div class="controls">
+                                            <input type="text" class="input-medium" id="input03" name="email" style="height: 28px;">
+                                        </div>
+                                    </div>
+                                    <div class="form-actions">
+                                        <button type="submit" class="btn btn-primary">Enviar</button>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>
