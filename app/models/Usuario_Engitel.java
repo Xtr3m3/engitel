@@ -17,7 +17,6 @@ public class Usuario_Engitel extends Model{
 
     @Column(name="uen_cargo",nullable=false)
     public String cargo;
-    @ManyToOne
     @JoinColumn(name="usu_id",nullable=false)
     public Usuario usuario;
 }

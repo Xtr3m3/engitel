@@ -16,8 +16,7 @@ import play.db.jpa.Model;
 public class Cliente extends Model{
     
     @Column(name="cli_empresa",nullable=false)
-    String empresa;
-    @ManyToOne
+    public String empresa;
     @JoinColumn(name="usu_id",nullable=false)
     public Usuario usuario;
     
