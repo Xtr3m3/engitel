@@ -9,7 +9,7 @@ import play.db.jpa.Model;
 
 /**
  *
- * @author Romelito
+ * @author Software
  */
 @Entity
 @Table(name="usuario")
@@ -17,6 +17,8 @@ public class Usuario extends Model{
     
     @Column(name="usu_nombre",nullable=false)
     public String nombre;
+    @Column(name="usu_apellidos",nullable=false)
+    public String apellidos;
     @Column(name="usu_email",nullable=false)
     public String email;
     @Column(name="usu_contrasenia",nullable=false)
