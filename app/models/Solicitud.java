@@ -15,14 +15,14 @@ import play.db.jpa.Model;
 @Table(name="solicitud")
 public class Solicitud extends Model{
     
-    @Column(name="sol_tipo",nullable=false, length=45)
-    String tipo;
+    @Column(name="pos_tipo",nullable=false )
+    public Producto_Servicio producto_servicio;
     @Column(name="sol_asunto",nullable=false)
-    String asunto;
+    public String asunto;
     @Column(name="sol_descripcion",nullable=false)
-    String descripcion;
+    public String descripcion;
     @Column(name="sol_estado",nullable=false, length=45)
-    String estado;
+    public String estado;
     @ManyToOne
     @JoinColumn(name="cli_id",nullable=false)
     public Cliente cliente;
